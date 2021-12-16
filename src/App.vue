@@ -61,7 +61,7 @@ export default {
 
         response.status === 200
           ? (this.tasks = this.tasks.filter((task) => {
-              task.id !== id;
+              return task.id !== id;
             }))
           : alert("Error deleting task");
       }
@@ -82,7 +82,7 @@ export default {
       const data = await response.json()
       
       this.tasks = this.tasks.map((task) => {
-        task.id === id ? { ...task, reminder: data.reminder } : task;
+        return task.id === id ? { ...task, reminder: data.reminder } : task;
       });
     },
 
