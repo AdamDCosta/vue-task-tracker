@@ -15,7 +15,7 @@
     {
       "text": "Buy Books",
       "day": "December 16th at 1.00pm",
-      "reminder": false,
+      "reminder": true,
       "id": "W3BLWNU"
     }
   ]
